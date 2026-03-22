@@ -1,0 +1,362 @@
+[
+  {
+    "appid": 1,
+    "image": "https://img.icons8.com/color/96/chat.png",
+    "title": "ChatPro",
+    "companyName": "TechSoft",
+    "description": "A fast and secure messaging app.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "appid": 2,
+    "image": "https://img.icons8.com/color/96/fitness.png",
+    "title": "FitLife",
+    "companyName": "HealthCorp",
+    "description": "Track your fitness and stay healthy.",
+    "size": 60,
+    "reviews": 980,
+    "ratingAvg": 4.3,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 480 }
+    ]
+  },
+  {
+    "appid": 3,
+    "image": "https://img.icons8.com/color/96/meal.png",
+    "title": "Foodie",
+    "companyName": "YumTech",
+    "description": "Discover and order delicious meals.",
+    "size": 75,
+    "reviews": 1500,
+    "ratingAvg": 4.6,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "appid": 4,
+    "image": "https://img.icons8.com/color/96/online-course.png",
+    "title": "EduMaster",
+    "companyName": "LearnHub",
+    "description": "Online courses and skill development.",
+    "size": 120,
+    "reviews": 2000,
+    "ratingAvg": 4.7,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1360 }
+    ]
+  },
+  {
+    "appid": 5,
+    "image": "https://img.icons8.com/color/96/airplane-take-off.png",
+    "title": "TravelGo",
+    "companyName": "TripWorld",
+    "description": "Book flights and hotels easily.",
+    "size": 90,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 505 }
+    ]
+  },
+  {
+    "appid": 6,
+    "image": "https://img.icons8.com/color/96/shopping-cart.png",
+    "title": "ShopEasy",
+    "companyName": "MarketHub",
+    "description": "Shop online easily.",
+    "size": 80,
+    "reviews": 1700,
+    "ratingAvg": 4.5,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 910 }
+    ]
+  },
+  {
+    "appid": 7,
+    "image": "https://img.icons8.com/color/96/note.png",
+    "title": "NotePlus",
+    "companyName": "Productive Inc",
+    "description": "Take notes and stay organized.",
+    "size": 35,
+    "reviews": 800,
+    "ratingAvg": 4.2,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "appid": 8,
+    "image": "https://img.icons8.com/color/96/musical-notes.png",
+    "title": "MusicBeat",
+    "companyName": "SoundWave",
+    "description": "Stream your favorite songs.",
+    "size": 55,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "appid": 9,
+    "image": "https://img.icons8.com/color/96/controller.png",
+    "title": "GameZone",
+    "companyName": "PlayStudio",
+    "description": "Play exciting mobile games.",
+    "size": 150,
+    "reviews": 3000,
+    "ratingAvg": 4.8,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 2170 }
+    ]
+  },
+  {
+    "appid": 10,
+    "image": "https://img.icons8.com/color/96/partly-cloudy-day.png",
+    "title": "WeatherNow",
+    "companyName": "ClimateTech",
+    "description": "Get real-time weather updates.",
+    "size": 25,
+    "reviews": 600,
+    "ratingAvg": 4.1,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 130 }
+    ]
+  },
+  {
+    "appid": 11,
+    "image": "https://img.icons8.com/color/96/wallet.png",
+    "title": "FinanceTrack",
+    "companyName": "MoneyWise",
+    "description": "Manage your expenses and savings.",
+    "size": 50,
+    "reviews": 900,
+    "ratingAvg": 4.3,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "appid": 12,
+    "image": "https://img.icons8.com/color/96/picture.png",
+    "title": "PhotoEdit",
+    "companyName": "PixelLab",
+    "description": "Edit photos like a pro.",
+    "size": 95,
+    "reviews": 1800,
+    "ratingAvg": 4.7,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1140 }
+    ]
+  },
+  {
+    "appid": 13,
+    "image": "https://img.icons8.com/color/96/news.png",
+    "title": "NewsDaily",
+    "companyName": "MediaCorp",
+    "description": "Stay updated with latest news.",
+    "size": 40,
+    "reviews": 700,
+    "ratingAvg": 4.0,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 180 }
+    ]
+  },
+  {
+    "appid": 14,
+    "image": "https://img.icons8.com/color/96/language.png",
+    "title": "LanguagePro",
+    "companyName": "LinguaTech",
+    "description": "Learn new languages easily.",
+    "size": 70,
+    "reviews": 1300,
+    "ratingAvg": 4.6,
+    "downloads": 650000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 690 }
+    ]
+  },
+  {
+    "appid": 15,
+    "image": "https://img.icons8.com/color/96/lock.png",
+    "title": "SecureVault",
+    "companyName": "SafeTech",
+    "description": "Protect your files and data.",
+    "size": 65,
+    "reviews": 500,
+    "ratingAvg": 4.2,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 150 }
+    ]
+  },
+  {
+    "appid": 16,
+    "image": "https://img.icons8.com/color/96/taxi.png",
+    "title": "RideNow",
+    "companyName": "MoveFast",
+    "description": "Book rides instantly.",
+    "size": 85,
+    "reviews": 1600,
+    "ratingAvg": 4.4,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "appid": 17,
+    "image": "https://img.icons8.com/color/96/task.png",
+    "title": "TaskManager",
+    "companyName": "OrganizePro",
+    "description": "Manage daily tasks efficiently.",
+    "size": 45,
+    "reviews": 750,
+    "ratingAvg": 4.3,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 290 }
+    ]
+  },
+  {
+    "appid": 18,
+    "image": "https://img.icons8.com/color/96/video.png",
+    "title": "VideoStream",
+    "companyName": "StreamHub",
+    "description": "Watch movies and series.",
+    "size": 110,
+    "reviews": 2500,
+    "ratingAvg": 4.7,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1730 }
+    ]
+  },
+  {
+    "appid": 19,
+    "image": "https://img.icons8.com/color/96/cooking.png",
+    "title": "RecipeBook",
+    "companyName": "CookMaster",
+    "description": "Explore tasty recipes.",
+    "size": 55,
+    "reviews": 650,
+    "ratingAvg": 4.5,
+    "downloads": 270000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 280 }
+    ]
+  },
+  {
+    "appid": 20,
+    "image": "https://img.icons8.com/color/96/bitcoin.png",
+    "title": "CryptoWatch",
+    "companyName": "BlockTech",
+    "description": "Track cryptocurrency prices.",
+    "size": 60,
+    "reviews": 1400,
+    "ratingAvg": 4.6,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 800 }
+    ]
+  }
+]

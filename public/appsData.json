@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "appid": 1,
     "image": "https://img.icons8.com/color/96/chat.png",
     "title": "ChatPro",
     "companyName": "TechSoft",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "id": 2,
+    "appid": 2,
     "image": "https://img.icons8.com/color/96/dumbbell.png",
     "title": "FitLife",
     "companyName": "HealthCorp",
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "id": 3,
+    "appid": 3,
     "image": "https://img.icons8.com/color/96/meal.png",
     "title": "Foodie",
     "companyName": "YumTech",
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "id": 4,
+    "appid": 4,
     "image": "https://img.icons8.com/color/96/training.png",
     "title": "EduMaster",
     "companyName": "LearnHub",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "id": 5,
+    "appid": 5,
     "image": "https://img.icons8.com/color/96/airplane-take-off.png",
     "title": "TravelGo",
     "companyName": "TripWorld",
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "id": 6,
+    "appid": 6,
     "image": "https://img.icons8.com/color/96/shopping-cart.png",
     "title": "ShopEasy",
     "companyName": "MarketHub",
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "id": 7,
+    "appid": 7,
     "image": "https://img.icons8.com/color/96/note.png",
     "title": "NotePlus",
     "companyName": "Productive Inc",
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "id": 8,
+    "appid": 8,
     "image": "https://img.icons8.com/color/96/musical-notes.png",
     "title": "MusicBeat",
     "companyName": "SoundWave",

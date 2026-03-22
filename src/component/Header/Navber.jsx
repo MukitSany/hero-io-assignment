@@ -1,13 +1,15 @@
 import React from 'react';
 import Headerimg from '../../assets/logo.png'
 import { Github } from 'lucide-react';
+import { Link } from 'react-router';
 
 const Navber = () => {
 
     const link = <>
-        <li className='m-2'>Home</li>
-        <li className='m-2'>Apps</li>
+        <Link to='/'><li className='m-2'>Home</li></Link>
+        <Link to="/apps"><li className='m-2'>Apps</li></Link>
         <li className='m-2'>Installation</li>
+        
     </>
     return (
         <div>
@@ -25,7 +27,7 @@ const Navber = () => {
         }
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl"><img className='h-8 w-auto' src={Headerimg} alt=""/><span className='text-3xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>Hero.IO</span></a>
+    <Link to="/"><p className="btn btn-ghost text-xl"><img className='h-8 w-auto' src={Headerimg} alt=""/><span className='text-3xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>Hero.IO</span></p></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

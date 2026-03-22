@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 import App from '../App/App';
 
 const Apps = ({data}) => {
-    const [allApps, setAllApps] = useState([]);
+    // const [allApps, setAllApps] = useState([]);
     
     // useEffect(() => {
     //     fetch("appsData.json")
@@ -24,7 +24,7 @@ const Apps = ({data}) => {
             <Suspense fallback={<span>Loading....</span>}>
                 <div className='grid grid-cols-4 gap-4 m-9'>
                     {
-                    data.map((singleApp)=><App key={singleApp.id} singleApp={singleApp}></App>)
+                    data.slice(0, 20).map((singleApp)=><App key={singleApp.appid} singleApp={singleApp}></App>)
                 }
                 </div>
             </Suspense>
