@@ -22,9 +22,11 @@ const Apps = ({data}) => {
                 <p className='text-center text-gray-500 m-4'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <Suspense fallback={<span>Loading....</span>}>
-                {
+                <div className='grid grid-cols-4 gap-4 m-9'>
+                    {
                     data.map((singleApp)=><App key={singleApp.id} singleApp={singleApp}></App>)
                 }
+                </div>
             </Suspense>
         </div>
     );
