@@ -10,11 +10,11 @@ const Banner = () => {
             <p className='text-center text-gray-500 m-4'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />
             Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <div className='flex justify-center gap-4'>
-                <button className='border p-2 m-2 font-bold flex gap-1'><img src={playstoreimg} alt="" srcset="" /> Google Play</button>
-                <button className='border p-2 m-2 font-bold flex gap-1'><img src={appstoreimg} alt="" srcset="" />App Store</button>
+                <button className='border p-2 m-2 font-bold flex gap-1'><img src={playstoreimg} alt=""/> Google Play</button>
+                <button className='border p-2 m-2 font-bold flex gap-1'><img src={appstoreimg} alt=""/>App Store</button>
             </div>
             <div className='flex justify-center mt-2'>
-                <img src={iphoneimf} alt="" srcset="" />
+                <img src={iphoneimf} alt=""/>
             </div>
             <section className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white py-16 rounded-2xl">
       <div className="max-w-6xl mx-auto text-center">

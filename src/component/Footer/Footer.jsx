@@ -6,7 +6,7 @@ const Footer = () => {
         <div>
             <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
   <aside>
-    <a className="btn btn-ghost text-xl"><img className='h-6 w-auto' src={Headerimg} alt="" srcset="" /><span className=''>Hero.IO</span></a>
+    <a className="btn btn-ghost text-xl"><img className='h-6 w-auto' src={Headerimg} alt=""/><span className=''>Hero.IO</span></a>
     <p>
       Hero Consulted Limited
       <br />

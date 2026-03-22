@@ -25,7 +25,7 @@ const Navber = () => {
         }
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl"><img className='h-8 w-auto' src={Headerimg} alt="" srcset="" /><span className='text-3xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>Hero.IO</span></a>
+    <a className="btn btn-ghost text-xl"><img className='h-8 w-auto' src={Headerimg} alt=""/><span className='text-3xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>Hero.IO</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
