@@ -8,7 +8,7 @@ const App = ({singleApp}) => {
     // console.log(data);
     // console.log(singleApp);
 
-    const {companyName,downloads,appid,image,ratingAvg,description,} = singleApp;
+    const {title,companyName,downloads,appid,image,ratingAvg,description,} = singleApp;
 
     // console.log(appid);
 
@@ -23,7 +23,7 @@ const App = ({singleApp}) => {
   </figure>
   <div className="card-body">
     <h2 className="card-title  font-bold">
-      {companyName}: {description.slice(0, 20)}
+      {title}: {description.slice(0, 20)}
       {/* <div className="badge badge-secondary">NEW</div> */}
     </h2>
     {/* <p>{description}</p> */}

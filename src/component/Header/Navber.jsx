@@ -6,9 +6,9 @@ import { Link } from 'react-router';
 const Navber = () => {
 
     const link = <>
-        <Link to='/'><li className='m-2'>Home</li></Link>
+        <Link to="/"><li className='m-2'>Home</li></Link>
         <Link to="/apps"><li className='m-2'>Apps</li></Link>
-        <li className='m-2'>Installation</li>
+        <Link to="installation"><li className='m-2'>Installation</li></Link>
         
     </>
     return (

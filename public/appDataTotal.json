@@ -19,7 +19,7 @@
   },
   {
     "appid": 2,
-    "image": "https://img.icons8.com/color/96/fitness.png",
+    "image": "https://img.icons8.com/color/96/dumbbell.png",
     "title": "FitLife",
     "companyName": "HealthCorp",
     "description": "Track your fitness and stay healthy.",
@@ -55,7 +55,7 @@
   },
   {
     "appid": 4,
-    "image": "https://img.icons8.com/color/96/online-course.png",
+    "image": "https://img.icons8.com/color/96/training.png",
     "title": "EduMaster",
     "companyName": "LearnHub",
     "description": "Online courses and skill development.",

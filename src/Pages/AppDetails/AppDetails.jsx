@@ -4,6 +4,7 @@ import downloadIcon from '../../assets/icon-downloads.png'
 import ratingIcon from '../../assets/icon-ratings.png'
 import reviewIcon from '../../assets/icon-review.png'
 import { Download } from 'lucide-react';
+import { addToStoreDB } from '../../Utility/addToDB';
 
 const AppDetails = () => {
     const {id} = useParams();
@@ -11,15 +12,19 @@ const AppDetails = () => {
     const data = useLoaderData();
     const singleApp = data.find(app => app.appid === appId);
     // console.log(singleApp);
-    const {image,title,companyName,description,size,reviews,ratingAvg,downloads,ratings} = singleApp;
+    const {image,title,companyName,description,size,reviews,ratingAvg,downloads} = singleApp;
+
+    const handleMarkDownload = id => {
+        addToStoreDB(id)
+    }
     
     return (
         <div className='m-6'>
             <div className='flex'>
                 <img className='h-[350px] w-[350px]' src={image} alt="" />
                 <div>
-                    <h1>{title}: {description}</h1>
-                    <p>Develoved by {companyName}</p>
+                    <h1 className='font-bold text-3xl'>{title}: {description}</h1>
+                    <p className='mt-1 text-xl text-gray-500'>Develoved by <span className='text-[#9F62F2]  font-semibold'>{companyName}</span></p>
                     <div className="divider"></div>
                     <div className='flex justify-start gap-12'>
                         <div>
@@ -39,11 +44,15 @@ const AppDetails = () => {
                         </div>
                         
                     </div>
-                    <button className="btn btn-accent w-[250px] h-[52px] mt-3 text-white font-bold text-lg">Install Now ({size}MB)</button>
+                    <button onClick={()=>handleMarkDownload(id)} className="btn btn-accent w-[250px] h-[52px] mt-3 text-white font-bold text-lg">Install Now ({size}MB)</button>
 
                 </div>
             </div>
             <div className="divider"></div>
+            <h1 className='text-2xl font-semibold '>Ratings</h1>
+            <div className="divider"></div>
+            <h1 className='text-2xl font-semibold '>Description</h1>
+            <p className='mt-1 text-xl text-gray-500'>{description}</p>
         </div>
     );
 };
