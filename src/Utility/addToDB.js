@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const getAvailableApp = () => {
     const availableAppSTR = localStorage.getItem("installation");
     if (availableAppSTR) {
@@ -9,12 +11,20 @@ const getAvailableApp = () => {
     }
 }
 
+
+
+
 const addToStoreDB = (id) => {
 
     const storeAppData = getAvailableApp();
 
     if (storeAppData.includes(id)) {
-        alert("This app already installed")
+        Swal.fire({
+    icon: "error",
+    title: "Already Installed",
+    text: "This app is already installed!",
+    confirmButtonColor: "#632EE3"
+  });
     }
     else {
         storeAppData.push(id);
@@ -24,4 +34,4 @@ const addToStoreDB = (id) => {
     }
 }
 
-export {addToStoreDB}
+export {addToStoreDB,getAvailableApp}

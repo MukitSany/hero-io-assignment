@@ -6,6 +6,8 @@ import reviewIcon from '../../assets/icon-review.png'
 import { Download } from 'lucide-react';
 import { addToStoreDB } from '../../Utility/addToDB';
 
+  import { ToastContainer, toast } from 'react-toastify';
+
 const AppDetails = () => {
     const {id} = useParams();
     const appId = parseInt(id);
@@ -15,9 +17,10 @@ const AppDetails = () => {
     const {image,title,companyName,description,size,reviews,ratingAvg,downloads} = singleApp;
 
     const handleMarkDownload = id => {
+        toast("App Installation Processing")
         addToStoreDB(id)
     }
-    
+
     return (
         <div className='m-6'>
             <div className='flex'>
@@ -45,6 +48,7 @@ const AppDetails = () => {
                         
                     </div>
                     <button onClick={()=>handleMarkDownload(id)} className="btn btn-accent w-[250px] h-[52px] mt-3 text-white font-bold text-lg">Install Now ({size}MB)</button>
+                    <ToastContainer />
 
                 </div>
             </div>
