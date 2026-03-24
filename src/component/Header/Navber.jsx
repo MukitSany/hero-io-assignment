@@ -1,14 +1,14 @@
 import React from 'react';
 import Headerimg from '../../assets/logo.png'
 import { Github } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navber = () => {
 
     const link = <>
-        <Link to="/"><li className='m-2'>Home</li></Link>
-        <Link to="/apps"><li className='m-2'>Apps</li></Link>
-        <Link to="installation"><li className='m-2'>Installation</li></Link>
+        <NavLink to={"/"}><li className='m-2 '>Home</li></NavLink>
+        <NavLink to="/apps"><li className='m-2'>Apps</li></NavLink>
+        <NavLink to="installation"><li className='m-2'>Installation</li></NavLink>
         
     </>
     return (
@@ -21,7 +21,7 @@ const Navber = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow [&_a]:hover:underline [&_a.active]:text-purple-700">
         {
             link
         }
@@ -30,12 +30,12 @@ const Navber = () => {
     <Link to="/"><p className="btn btn-ghost text-xl"><img className='h-8 w-auto' src={Headerimg} alt=""/><span className='text-3xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text'>Hero.IO</span></p></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 [&_a]:hover:border-2 font-bold active [&_a.active]:text-red-500">
       {link}
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn btn-primary"><Github /><span>Continue</span></a>
+    <a href='https://github.com/MukitSany' target='_blank' className="btn btn-primary"><Github /><span>Contributr</span></a>
   </div>
 </div>
         </div>

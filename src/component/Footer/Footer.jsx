@@ -13,7 +13,7 @@ const Footer = () => {
       Providing reliable tech since 1992
     </p>
   </aside>
-  <nav>
+  <nav className=''>
     <h6 className="footer-title">Social</h6>
     <div className="grid grid-flow-col gap-4">
       <a>
@@ -51,6 +51,11 @@ const Footer = () => {
       </a>
     </div>
   </nav>
+</footer>
+<footer className="footer sm:footer-horizontal footer-center bg-neutral text-neutral-content p-2">
+  <aside>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+  </aside>
 </footer>
         </div>
     );

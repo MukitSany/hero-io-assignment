@@ -13,11 +13,12 @@ const App = ({singleApp}) => {
     // console.log(appid);
 
     return (
-        <Link to={`/appdetails/${appid}`}>
-        <div className='grid grid-cols-4 gap-4'>
+        <div>
+            <Link to={`/appdetails/${appid}`}>
+        <div className='grid grid-cols-4 gap-4 hover:scale-105 transition-all'>
             <div className="card bg-base-100 w-96 shadow-sm ">
   <figure className='bg-[#D9D9D9] h-[316px]'>
-    <img className='h-[150px]'
+    <img className='h-[150px] hover:-rotate-2'
       src={image}
       alt="Shoes" />
   </figure>
@@ -28,13 +29,16 @@ const App = ({singleApp}) => {
     </h2>
     {/* <p>{description}</p> */}
     <div className="card-actions justify-between">
-      <div className="badge bg-gray-100"><img className='h-[16px]' src={iconDownload} alt="" /><span className='font-bold text-[#00D390]'>{downloads}</span></div>
+      <div className="badge bg-gray-100"><img className='h-[16px]' src={iconDownload} alt="" /><span className='font-bold text-[#00D390]'>{new Intl.NumberFormat("en-US",{
+                                    notation: "compact",
+                                }).format(downloads)}</span></div>
       <div className="badge bg-gray-100"><img className='h-[16px]'src={iconStar} alt="" /><span className='font-bold text-[#FF8811]'>{ratingAvg}</span></div>
     </div>
   </div>
 </div>   
         </div>
         </Link>
+        </div>
     );
 };
 

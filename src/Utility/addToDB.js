@@ -24,6 +24,7 @@ const addToStoreDB = (id) => {
     title: "Already Installed",
     text: "This app is already installed!",
     confirmButtonColor: "#632EE3"
+    
   });
     }
     else {

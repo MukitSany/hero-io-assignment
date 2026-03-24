@@ -5,7 +5,10 @@ import iconStar from '../../assets/icon-star.png'
 const AppCart = (a) => {
     
     // console.log(a.singleApp.companyName);
-    const {image,title,downloads,ratingAvg} = a.singleApp
+    const {image,title,downloads,ratingAvg,ratings} = a.singleApp
+
+    // const barData = a.sort((a,b) => b.downloads - a.downloads);
+    // console.log(barData);
 
     return (
         <div className='m-4'>
@@ -14,7 +17,9 @@ const AppCart = (a) => {
                     <img className='h-full' src={image} alt="" />
                     <div><h1>{title}</h1>
                     <div className='flex gap-6 mt-8'>
-                        <div className="flex"><img className='h-5' src={iconDownload} alt="" /><span className='font-bold text-[#00D390]'>{downloads}</span></div>
+                        <div className="flex"><img className='h-5' src={iconDownload} alt="" /><span className='font-bold text-[#00D390]'>{new Intl.NumberFormat("en-US",{
+                                    notation: "compact",
+                                }).format(downloads)}</span></div>
                           <div className="flex"><img className='h-[16px]'src={iconStar} alt="" /><span className='font-bold text-[#FF8811]'>{ratingAvg}</span></div>
                     </div>
                     </div>
