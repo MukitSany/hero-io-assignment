@@ -1,11 +1,24 @@
 import React from 'react';
 import iconDownload from '../../assets/icon-downloads.png'
 import iconStar from '../../assets/icon-star.png'
+import { removeFromCart } from '../../Utility/addToDB';
+import { useLoaderData, useParams } from 'react-router';
 
 const AppCart = (a) => {
+
+    
+    
+    const data = useLoaderData();
+    // console.log(data);
+    // const singleApp = data.find(app => app.appid === appId);
     
     // console.log(a.singleApp.companyName);
     const {image,title,downloads,ratingAvg,ratings} = a.singleApp
+
+    const removeMArk = data => {
+        
+        removeFromCart(data)
+    }
 
     // const barData = a.sort((a,b) => b.downloads - a.downloads);
     // console.log(barData);
@@ -25,7 +38,7 @@ const AppCart = (a) => {
                     </div>
                     
                 </div>
-                <button className="btn btn-success px-5 py-2 text-white">Uninstall</button>
+                <button onClick={()=>removeMArk(data.companyName)} className="btn btn-success px-5 py-2 text-white">Uninstall</button>
             </div>
         </div>
     );

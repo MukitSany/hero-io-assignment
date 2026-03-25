@@ -35,6 +35,10 @@ const Installation = () => {
         }
     }
 
+    const removeFromCart = id =>{
+    console.log('remove item', id);
+}
+
     return (
         <div>
             <div className='m-4'>

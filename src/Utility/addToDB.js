@@ -35,4 +35,10 @@ const addToStoreDB = (id) => {
     }
 }
 
-export {addToStoreDB,getAvailableApp}
+const removeFromCart = id =>{
+    console.log('remove item', id);
+}
+
+
+
+export {addToStoreDB,getAvailableApp,removeFromCart}

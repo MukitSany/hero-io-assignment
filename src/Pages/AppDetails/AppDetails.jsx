@@ -18,12 +18,12 @@ const AppDetails = () => {
     // console.log(data);
     const {image,title,companyName,description,size,reviews,ratingAvg,downloads,ratings} = singleApp;
 
-    const [installed, setInstalled] = useState("")
+    const [installed, setInstalled] = useState(false)
 
     const handleMarkDownload = id => {
         toast("App Installation Processing")
         addToStoreDB(id)
-        setInstalled(!installed)
+        setInstalled(true)
         
     }
 
@@ -32,7 +32,7 @@ const AppDetails = () => {
             <div className='flex'>
                 <img className='h-[350px] w-[350px]' src={image} alt="" />
                 <div>
-                    <h1 className='font-bold text-3xl'>{title}: {description}</h1>
+                    <h1 className='font-bold text-3xl'>{title}</h1>
                     <p className='mt-1 text-xl text-gray-500'>Develoved by <span className='text-[#9F62F2]  font-semibold'>{companyName}</span></p>
                     <div className="divider"></div>
                     <div className='flex justify-start gap-12'>
@@ -60,7 +60,7 @@ const AppDetails = () => {
                         </div>
                         
                     </div>
-                    <button onClick={()=>handleMarkDownload(id)} className="btn btn-accent w-[250px] h-[52px] mt-3 text-white font-bold text-lg ">{installed?"Installed": `Install Now`}</button> 
+                    <button desabled={installed} onClick={()=>handleMarkDownload(id)} className="btn btn-accent w-[250px] h-[52px] mt-3 text-white font-bold text-lg ">{installed===true?"Installed": `Install Now`}</button> 
                     <ToastContainer />
 
                 </div>

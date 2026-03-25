@@ -36,6 +36,10 @@ export const router = createBrowserRouter([
             path: '/installation',
             loader:()=>fetch('appDataTotal.json'),
             Component: Installation
+        },
+        {
+            path: '*',
+            element: <Errorpage></Errorpage>,
         }
     ]
   },
