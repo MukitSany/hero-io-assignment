@@ -60,7 +60,7 @@ const AppDetails = () => {
                         </div>
                         
                     </div>
-                    <button desabled={installed} onClick={()=>handleMarkDownload(id)} className="btn btn-accent w-[250px] h-[52px] mt-3 text-white font-bold text-lg ">{installed===true?"Installed": `Install Now`}</button> 
+                    <button disabled={installed} onClick={()=>handleMarkDownload(id)} className="btn btn-accent w-[250px] h-[52px] mt-3 text-white font-bold text-lg ">{installed===true?"Installed": `Install Now`}</button> 
                     <ToastContainer />
 
                 </div>
