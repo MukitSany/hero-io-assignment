@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import iconDownload from '../../assets/icon-downloads.png'
 import iconStar from '../../assets/icon-star.png'
-import { removeFromCart } from '../../Utility/addToDB';
+
 import { useLoaderData, useParams } from 'react-router';
 
 const AppCart = (a) => {
+    // console.log(a);
 
-    
+    const [apps, setApps] = useState([]);
+
+    const removeFromCart = (data) => {
+//   console.log(a);
+  const updatedApps = apps.filter(app => app.a !== data);
+  setApps(updatedApps);
+//   console.log(updatedApps);
+
+  localStorage.setItem("apps", JSON.stringify(updatedApps));
+};
     
     const data = useLoaderData();
     // console.log(data);
     // const singleApp = data.find(app => app.appid === appId);
     
     // console.log(a.singleApp.companyName);
-    const {image,title,downloads,ratingAvg,ratings} = a.singleApp
+    const {image,title,downloads,ratingAvg,ratings, appid} = a.singleApp
 
-    const removeMArk = data => {
-        
-        removeFromCart(data)
-    }
+   
 
     // const barData = a.sort((a,b) => b.downloads - a.downloads);
     // console.log(barData);
@@ -38,7 +45,7 @@ const AppCart = (a) => {
                     </div>
                     
                 </div>
-                <button onClick={()=>removeMArk(data.companyName)} className="btn btn-success px-5 py-2 text-white">Uninstall</button>
+                <button onClick={()=>removeFromCart(data.appid)} className="btn btn-success px-5 py-2 text-white">Uninstall</button>
             </div>
         </div>
     );

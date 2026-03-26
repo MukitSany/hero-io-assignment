@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Swal from "sweetalert2";
 
 const getAvailableApp = () => {
@@ -35,10 +36,10 @@ const addToStoreDB = (id) => {
     }
 }
 
-const removeFromCart = id =>{
-    console.log('remove item', id);
-}
 
 
 
-export {addToStoreDB,getAvailableApp,removeFromCart}
+
+
+
+export {addToStoreDB,getAvailableApp}
